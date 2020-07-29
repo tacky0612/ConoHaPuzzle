@@ -1,4 +1,4 @@
-# ConoHaPuzzle
+# ConoHa Puzzle
 こちらからゲームが遊べます。  
 [Github Pages](https://tacky0612.github.io/ConoHaPuzzle/)
  * * *  

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ConoHa Puzzle 4*4</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+</head>
+
+<body id="body">
+    <header>
+        <h1 class="title">ConoHa Puzzle 4*4</h1>
+    </header>
+    <section>
+        <div class="main">
+            <div class="main-inner">
+                <div class="tutorial">
+                    <h3>【ゲーム説明】</h3>
+                    <ul>
+                        <li>計16枚のパネルが入るエリアと15枚のイメージをスライドさせて正しい並びを目指すパズルです。</li>
+                        <li>【ゲーム開始】ボタンでゲームを始めることが出来ます。</li>
+                        <li>パズルが完成したら【完成！】ボタンで結果が表示されます。</li>
+                        <li>より短い時間・より少ないクリック数で完成を目指しましょう！！</li>
+                    </ul>
+                </div>
+                <div id="start">
+                    <button id="start-game">ゲーム開始</button>
+                    <button id="reset-game" style="display: none;">リセット</button>
+                    <button id="finish-game" style="display: none;">完成！</button>
+                </div>
+                <div class="board">
+                    <div id="puzzle" style="display: none;">
+                        <table id="board">
+                            <tbody>
+                                <tr>
+                                    <td class="one image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="two image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="three image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="four image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="five image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="six image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="seven image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="eight image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="nine image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="ten image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="eleven image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="twelve image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="thirteen image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="fourteen image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="fifteen image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                    <td class="sixteen image-td"><button class="number-button" tabindex="-1"
+                                            accesskey="c"><img src="" alt=""></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="answer">
+                        <img src="image/answer.png" alt="">
+                    </div>
+                    <div class="score">
+                        <div id="timer">
+                            <div id="duration-line" style="display:none">
+                                <p> Time: <span class="duration"></span> (sec) / Click count: <span
+                                        class="click-count">0</span></p>
+                            </div>
+                            <div id="result" style="display:none">
+                                <p>【Result】Time: <span class="finish-time"></span> (sec) / Click count: <span
+                                        class="finish-click-count">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="guideline">当サイトは<a href="https://conoha.mikumo.com/guideline/">美雲このは二次創作イラスト</a>を使用しております。</p>
+        <p>Copyright © 2020 @tacky0612 All Rights Reserved.</p>
+    </footer>
+    <!--JQueryライブラリ読み込み-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>

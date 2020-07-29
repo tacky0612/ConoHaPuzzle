@@ -1,0 +1,151 @@
+@charset "UTF-8";
+body {
+  min-width: 850px;
+  text-align: center;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  table-layout: fixed;
+  margin: 0 auto;
+  padding: 10px;
+  border: dashed 2px #12b8d7;
+  /*点線*/
+  background-color: #e4fcff;
+  height: 700px;
+  width: 700px;
+}
+
+.number-button {
+  display: grid;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  appearance: none;
+}
+
+.number-button img {
+  width: 100%;
+  height: 100%;
+}
+
+tr {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+td {
+  height: 104px;
+  display: table-cell;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+header {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #12b8d7;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.main {
+  display: flex;
+}
+
+.main-inner {
+  margin: 0px auto;
+}
+
+.main-inner .tutorial {
+  width: 850px;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #00bcd4;
+  background: #e4fcff;
+  /*背景色*/
+  border-top: solid 6px #12b8d7;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  /*影*/
+}
+
+.main-inner .tutorial h3 {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.main-inner .tutorial ul {
+  text-align: left;
+  margin: 30px;
+}
+
+.main .score {
+  display: flex;
+}
+
+.main .score #timer {
+  width: 500px;
+  margin: auto;
+}
+
+.main .score #timer p {
+  margin: 30px;
+  padding-bottom: 10px;
+  color: #12b8d7;
+  border-bottom: solid 2px #12b8d7;
+  font-size: 18px;
+}
+
+#start button {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #12b8d7;
+  background: #e4fcff;
+  transition: 0.4s;
+  margin: 20px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+  /*影*/
+}
+
+#start button:hover {
+  background: #12b8d7;
+  color: white;
+}
+
+.board {
+  margin: 30px;
+}
+
+#answer img {
+  margin: 10px;
+  padding: 10px;
+  height: 700px;
+  width: 700px;
+  border: dashed 2px #12b8d7;
+  /*点線*/
+}
+
+footer {
+  text-align: right;
+  color: #fff;
+  background-color: #12b8d7;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+footer .guideline {
+  margin: 20px;
+}

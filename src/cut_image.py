@@ -5,6 +5,8 @@ import sys
 
 def ImgSplit(im):
     width, height = im.size
+    width = width // 4
+    height = height // 4
 
     buff = []
     # 縦の分割枚数

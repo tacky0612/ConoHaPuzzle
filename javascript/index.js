@@ -137,7 +137,7 @@ function moveImages(buttonID, removedButtonID) {
     const buttonClass = buttons[buttonID];
     const removedButtonClass = buttons[removedButtonID];
     const imageID = getImageIDByButtonID(buttonID);
-    $(buttonClass).find("img").removeAttr("src");
+    $(buttonClass).find("img").attr("src","image/black.png");
     $(removedButtonClass).find("img").attr("src", getImagePassByImageID(imageID));
 }
 

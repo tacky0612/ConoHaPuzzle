@@ -4,8 +4,7 @@ import sys
 
 
 def ImgSplit(im):
-    height = 294
-    width = 294
+    width, height = im.size
 
     buff = []
     # 縦の分割枚数
@@ -20,7 +19,7 @@ def ImgSplit(im):
 
 
 if __name__ == '__main__':
-    im = Image.open('../image/answer.png')
+    im = Image.open('../image/answer.png') # Please replace with any image
     ig = ImgSplit(im)
     for i in range(len(ig)):
         ig[i].save("../image/" + str(i) + ".png", "PNG")
